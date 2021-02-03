@@ -1,0 +1,276 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[1]:
+
+
+import numpy as np
+import pandas as pd
+import re
+import os
+import seaborn as sns
+
+
+# In[2]:
+
+
+root_path = os.getcwd()
+
+
+# In[3]:
+
+
+data_path = os.path.join(root_path, "IMDb 2017")
+
+
+# In[4]:
+
+
+os.listdir(data_path)
+
+
+# In[5]:
+
+
+F1_path = os.path.join(data_path, "Combinded_raw_file_2017.csv.txt")
+F2_path = os.path.join(data_path, "movie_list_2017.txt")
+
+
+# In[6]:
+
+
+df1 = pd.read_csv(F1_path)
+
+
+# In[7]:
+
+
+#df1.head()
+#df1.tail()
+df1.columns
+
+
+# In[8]:
+
+
+df1.describe()
+
+
+# In[9]:
+
+
+df1_prime = df1[['Title', 'IMDb code', 'Year',
+                'Movie detail', 'Certificate'
+                ,'Duration', 'Genre', 'DWS']]
+
+
+# In[10]:
+
+
+df1_prime.isna().astype('int').sum()
+#here, NaN(null points) is 1
+#heatmap also is good way to understand the null points
+
+
+# In[11]:
+
+
+df1_clean = pd.DataFrame()
+
+
+# In[12]:
+
+
+df1_clean['IMDb code'] = df1['IMDb code']
+
+
+# In[13]:
+
+
+df1_clean['Year'] = df1['Year']
+
+
+# In[14]:
+
+
+def movie_detail(mstr):
+    try:
+        mstr = eval(mstr)
+        try:
+            C = mstr['Country']  
+        except:
+            C = np.nan   
+        try:
+            L = mstr['Language']
+        except:
+            L = np.nan
+        try:
+            AKA = mstr['Also Known As']
+        except:
+            AKA = np.nan       
+        try:
+            B = mstr['Budget']
+        except:
+            B = np.nan
+        try:
+            R = mstr['Runtime']
+        except:
+            R = np.nan
+            
+        return C, L, AKA, B, R
+    except:
+        return np.nan,np.nan,np.nan,np.nan,np.nan
+
+
+# In[15]:
+
+
+df1_clean['Title'] = df1['Title']
+
+
+# In[16]:
+
+
+#for i,j in enumerate(df1['Movie detail']):
+#    print(i)
+#    movie_detail(j)
+
+
+# In[17]:
+
+
+#'Budget' in df1['Movie detail'][51]
+
+
+# In[18]:
+
+
+df1_clean['Country'] = df1['Movie detail'].apply(movie_detail).apply(lambda x: x[0])
+df1_clean['Language'] = df1['Movie detail'].apply(movie_detail).apply(lambda x: x[1])
+df1_clean["Also Known As"] = df1['Movie detail'].apply(movie_detail).apply(lambda x: x[2])
+df1_clean["Budget"] = df1['Movie detail'].apply(movie_detail).apply(lambda x: x[3])
+df1_clean['Runtime'] = df1['Movie detail'].apply(movie_detail).apply(lambda x: x[4])
+
+
+# In[19]:
+
+
+df1_clean.drop(['Budget'],axis = 1)
+
+
+# In[20]:
+
+
+def spliter_striper(mstr):
+    try:
+        mstr = mstr.split("|")
+        res = []
+        for i in mstr:
+            res.append(i.strip())
+        return ','.join(res)
+    
+    except:
+        return np.nan
+
+
+# In[21]:
+
+
+df1_clean['Language'] = df1_clean['Language'].apply(spliter_striper)
+df1_clean['Country'] = df1_clean['Language'].apply(spliter_striper)
+
+
+# ##Extract Budget Number as int
+
+# In[22]:
+
+
+def bunit(mstr):
+    try:
+        if mstr[0] == '$':
+            return '$'
+        else:
+            return mstr[:3]
+    except:
+        return np.nan
+
+
+# In[23]:
+
+
+df1_clean['Budget_unit'] = df1_clean['Budget'].apply(bunit)
+
+
+# In[24]:
+
+
+def Bext(mstr):
+    try:
+        mstr = mstr.replace(',','')
+        res = re.findall(r'(\d+)',mstr)
+        return res[0]
+    except:
+        return np.nan
+
+
+# In[26]:
+
+
+df1_clean['budget_number'] = df1_clean['Budget'].apply(Bext)
+
+
+# In[27]:
+
+
+def runtime_value(mstr):
+    try:
+        mstr = mstr.split("|")
+        mstr = mstr[0]
+        value = re.findall(r'(\d+)',mstr)
+        return value
+    except:
+        np.nan
+
+
+# In[28]:
+
+
+df1_clean["runtime_value"] = df1_clean["Runtime"].apply(runtime_value)
+
+
+# In[29]:
+
+
+def runtime_vahed(mstr):
+    try:
+        mstr = mstr.split("|")
+        mstr = mstr[0]
+        vahed = re.findall(r'\d+\s*(\w+)',mstr)[0]
+        return vahed
+    except:
+        np.nan
+
+
+# In[30]:
+
+
+df1_clean["Runtime_vahed"] = df1_clean["Runtime"].apply(runtime_vahed)
+
+
+# In[31]:
+
+
+##df1_clean = df1_clean.drop(['Budget'],axis = 1)
+
+
+# In[33]:
+
+
+df1_clean
+
+
+# In[ ]:
+
+
+
+
