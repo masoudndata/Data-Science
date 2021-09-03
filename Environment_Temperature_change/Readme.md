@@ -11,3 +11,8 @@ Statistical unit: Countries and Territories.
 Statistical population: Countries and Territories.
 Reference area: Area of all the Countries and Territories of the world. In 2019: 190 countries and 37 other territorial entities.
 Code - reference area: FAOSTAT, M49, ISO2 and ISO3 (http://www.fao.org/faostat/en/#definitions). FAO Global Administrative Unit Layer (GAUL National level – reference year 2014. FAO Geospatial data repository GeoNetwork. Permanent address: http://www.fao.org:80/geonetwork?uuid=f7e7adb0-88fd-11da-a88f-000d939bc5d8.
+
+![2019-Temp](https://user-images.githubusercontent.com/50455870/132024754-181f892c-7708-4948-bb70-7cba4e53e56f.jpg)
+
+
+
