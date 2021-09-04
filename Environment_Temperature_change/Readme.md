@@ -17,5 +17,5 @@ where:<br/>
 · Trend g(t): models non-periodic changes.<br/>
 · Seasonality s(t): represents periodic changes.<br/>
 · Holidays component h(t): contributes information about holidays and events.<br/>
-
-
+ 
+ Because there are some missing values in almost all of these time series columns. 
