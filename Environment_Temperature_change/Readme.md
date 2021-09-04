@@ -19,3 +19,17 @@ where:<br/>
 · Holidays component h(t): contributes information about holidays and events.<br/>
  
  Because there are some missing values in almost all of these time series columns. 
+
+**Procedure**<br/>
+1- Import Data<br/>
+2- Preprocessing<br/>
+3- In-sample forecast<br/>
+4- Out-of-sample forecast<br/>
+
+**Results**<br/>
+In-sample forecast<br/>
+![111](https://user-images.githubusercontent.com/50455870/132105361-d7768333-97ab-4cb4-b44b-6c090cbf8e1b.JPG)
+
+In-sample forecast<br/>
+![112](https://user-images.githubusercontent.com/50455870/132105373-7221e299-505b-4721-9d2d-bc8737a17387.JPG)
+
