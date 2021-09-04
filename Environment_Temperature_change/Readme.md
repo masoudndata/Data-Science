@@ -12,4 +12,18 @@ Prophet is a procedure for forecasting time series data based on an additive mod
 · Changes in trend due to new products and market events.<br/>
 · Outliers.
 
+In its essence, Prophet library utilizes the additive regression model y(t) comprising the following components:
+y(t)=g(t)+s(t)+h(t)+ϵt,
+where:<br/>
+· Trend g(t): models non-periodic changes.<br/>
+· Seasonality s(t): represents periodic changes.<br/>
+· Holidays component h(t): contributes information about holidays and events.<br/>
+
+In its essence, Prophet library utilizes the additive regression model y(t) comprising the following components:
+y(t)=g(t)+s(t)+h(t)+ϵt,
+where:<br/>
+· Trend g(t): models non-periodic changes.<br/>
+· Seasonality s(t): represents periodic changes.<br/>
+· Holidays component h(t): contributes information about holidays and events.<br/>
+
 
