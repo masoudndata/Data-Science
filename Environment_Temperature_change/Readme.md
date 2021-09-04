@@ -6,7 +6,7 @@ The FAOSTAT Temperature Change domain disseminates statistics of mean surface te
 ![2019-Temp](https://user-images.githubusercontent.com/50455870/132024754-181f892c-7708-4948-bb70-7cba4e53e56f.jpg)
 
 **Prophet**<br/>
-Prophet is a procedure for forecasting time series data based on an additive model where non-linear trends are fit with yearly, weekly, and daily seasonality, plus holiday effects. It works best with time series that have strong seasonal effects and several seasons of historical data. <br/>
+Prophet is a procedure for forecasting time series data based on an additive model where non-linear trends are fit with yearly, weekly, and daily seasonality, plus holiday effects. It works best with time series that have strong seasonal effects and several seasons of historical data. <br/><br/>
 · Seasonal effects caused by human behavior: weekly, monthly and yearly cycles, dips and peaks on public holidays.<br/>
 · Changes in trend due to new products and market events.<br/>
 · Outliers.
