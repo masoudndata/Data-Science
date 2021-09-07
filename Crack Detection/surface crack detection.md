@@ -13,6 +13,10 @@ This case study is based on CNN model and the Case Study Paper includes detailed
 * Pooling<br/>
 * Flattening<br/>
 
+![i7 pooling](https://user-images.githubusercontent.com/50455870/132310803-800597d0-9456-4a59-ad2e-65a7c566ed7e.jpg)
+
+![i8 flatening](https://user-images.githubusercontent.com/50455870/132311288-f01a03fc-db32-4fc3-af8b-6824c68857f8.jpg)
+
 **Model Evaluation:**<br/>
 Important evaluation steps, described in detail in Case Study Paper , that help the CNN model to train and make accurate predictions such as:
 
@@ -20,12 +24,13 @@ Important evaluation steps, described in detail in Case Study Paper , that help 
 * Loss Function Optimizers (SGD and Adam Optimizer)<br/>
 * Activation Functions (Rectifier and Sigmoid)<br/>
 
-![i5](https://user-images.githubusercontent.com/50455870/132306618-a47b3dc3-85b2-440e-9355-64a23c438bfc.png)
-
-![i5](https://user-images.githubusercontent.com/50455870/132307942-424b1f85-8367-4195-be14-1ea54820425a.png)
+CNN Architecture:
+![i9](https://user-images.githubusercontent.com/50455870/132315375-54617cdd-e6f1-4d2b-a281-9073adfe11cd.jpg)
 
 ![CNN architecture](https://user-images.githubusercontent.com/50455870/132298053-51482b6c-7c9e-4216-a88f-4cd12d39b2ef.gif)
 
 ![i6](https://user-images.githubusercontent.com/50455870/132306835-448303c3-204b-49ee-a3ce-fc6a641a4c20.jpeg)
+
+
 
 Convolutional Neural Networks with TensorFlow
