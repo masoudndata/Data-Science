@@ -1,4 +1,4 @@
-The Dataset could be downloaded from https://www.kaggle.com/arunrk7/surface-crack-detection.
+This folder is about detecting cracks on the concrete. a TensorFlow CNN was used for make our predictions. The dataset consist of 40000 images, however for saving time and memory We use training data consisting of 7000. The Dataset could be downloaded from https://www.kaggle.com/arunrk7/surface-crack-detection.
 
 **Dataset info:** <br/>
 Concrete surface cracks are major defect in civil structures. Building Inspection which is done for the evaluation of rigidity and tensile strength of the building. Crack detection plays a major role in the building inspection, finding the cracks and determining the building health.
@@ -31,6 +31,14 @@ CNN Architecture:
 
 ![i6](https://user-images.githubusercontent.com/50455870/132306835-448303c3-204b-49ee-a3ce-fc6a641a4c20.jpeg)
 
-**Training Data**<br/>
-This folder is about detecting cracks on the concrete. a TensorFlow CNN was used for make our predictions. The dataset consist of 40000 images, however for saving time and memory We use training data consisting of 7000. 
-Convolutional Neural Networks with TensorFlow
+**Procedure:**<br/>
+1- Creating DataFrames
+2- Loading Image Data
+3- Training 
+4- Results
+
+**Results:**<br/>
+
+![i1](https://user-images.githubusercontent.com/50455870/132319074-075ca5da-72ad-40ff-a963-50829d952f78.JPG)
+
+![i2](https://user-images.githubusercontent.com/50455870/132319104-2129bc13-0c98-4c77-bc42-1c89e3c9a32f.JPG)
