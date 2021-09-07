@@ -31,6 +31,6 @@ CNN Architecture:
 
 ![i6](https://user-images.githubusercontent.com/50455870/132306835-448303c3-204b-49ee-a3ce-fc6a641a4c20.jpeg)
 
-
-
+**Training Data**<br/>
+This folder is about detecting cracks on the concrete. a TensorFlow CNN was used for make our predictions. The dataset consist of 40000 images, however for saving time and memory We use training data consisting of 7000. 
 Convolutional Neural Networks with TensorFlow
