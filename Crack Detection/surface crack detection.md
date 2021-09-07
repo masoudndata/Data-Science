@@ -22,6 +22,8 @@ Important evaluation steps, described in detail in Case Study Paper , that help 
 
 ![i5](https://user-images.githubusercontent.com/50455870/132306618-a47b3dc3-85b2-440e-9355-64a23c438bfc.png)
 
+![i5](https://user-images.githubusercontent.com/50455870/132307942-424b1f85-8367-4195-be14-1ea54820425a.png)
+
 ![CNN architecture](https://user-images.githubusercontent.com/50455870/132298053-51482b6c-7c9e-4216-a88f-4cd12d39b2ef.gif)
 
 ![i6](https://user-images.githubusercontent.com/50455870/132306835-448303c3-204b-49ee-a3ce-fc6a641a4c20.jpeg)
