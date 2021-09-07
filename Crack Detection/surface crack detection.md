@@ -9,19 +9,21 @@ The datasets contains images of various concrete surfaces with and without crack
 Convolutional Neural Networks (CNN)<br/>
 This case study is based on CNN model and the Case Study Paper includes detailed description of all the steps and processes that CNN's include such as:
 
-1- Convolutional Operation
-2- Pooling
-3- Flattening
+* Convolutional Operation<br/>
+* Pooling<br/>
+* Flattening<br/>
 
-**Model Evaluation:*<br/>
+**Model Evaluation:**<br/>
 Important evaluation steps, described in detail in Case Study Paper , that help the CNN model to train and make accurate predictions such as:
 
-Loss Functions for CNN (SoftMax and Cross-Entropy)
-Loss Function Optimizers (SGD and Adam Optimizer)
-Activation Functions (Rectifier and Sigmoid)
+* Loss Functions for CNN (SoftMax and Cross-Entropy)<br/>
+* Loss Function Optimizers (SGD and Adam Optimizer)<br/>
+* Activation Functions (Rectifier and Sigmoid)<br/>
+
+![i5](https://user-images.githubusercontent.com/50455870/132306618-a47b3dc3-85b2-440e-9355-64a23c438bfc.png)
 
 ![CNN architecture](https://user-images.githubusercontent.com/50455870/132298053-51482b6c-7c9e-4216-a88f-4cd12d39b2ef.gif)
 
-
+![i6](https://user-images.githubusercontent.com/50455870/132306835-448303c3-204b-49ee-a3ce-fc6a641a4c20.jpeg)
 
 Convolutional Neural Networks with TensorFlow
