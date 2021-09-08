@@ -1,3 +1,4 @@
+# Logistic Regression
 #### In this project we will implement logistic regression model to predict whether a person has heart disease, or not.
 #### Dataset Info.
 This database contains 76 attributes, but all published experiments refer to using a subset of 14 of them. In particular, the Cleveland database is the only one that has been used by ML researchers to
