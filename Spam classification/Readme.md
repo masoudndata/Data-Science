@@ -18,10 +18,10 @@ Keras is:
 # Keras & TensorFlow 2
 TensorFlow 2 is an end-to-end, open-source machine learning platform. You can think of it as an infrastructure layer for differentiable programming. It combines four key abilities:
 
-Efficiently executing low-level tensor operations on CPU, GPU, or TPU.
-Computing the gradient of arbitrary differentiable expressions.
-Scaling computation to many devices, such as clusters of hundreds of GPUs.
-Exporting programs ("graphs") to external runtimes such as servers, browsers, mobile and embedded devices.
+* Efficiently executing low-level tensor operations on CPU, GPU, or TPU.
+* Computing the gradient of arbitrary differentiable expressions.
+* Scaling computation to many devices, such as clusters of hundreds of GPUs.
+* Exporting programs ("graphs") to external runtimes such as servers, browsers, mobile and embedded devices.
 Keras is the high-level API of TensorFlow 2: an approachable, highly-productive interface for solving machine learning problems, with a focus on modern deep learning. It provides essential abstractions and building blocks for developing and shipping machine learning solutions with high iteration velocity.
 
 Keras empowers engineers and researchers to take full advantage of the scalability and cross-platform capabilities of TensorFlow 2: you can run Keras on TPU or on large clusters of GPUs, and you can export your Keras models to run in the browser or on a mobile device.
