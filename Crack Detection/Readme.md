@@ -39,6 +39,6 @@ CNN Architecture:
 
 **Results:**<br/>
 
-![i1](https://user-images.githubusercontent.com/50455870/132319074-075ca5da-72ad-40ff-a963-50829d952f78.JPG)
+![i1](https://user-images.githubusercontent.com/50455870/132319074-075ca5da-72ad-40ff-a963-50829d952f78.JPG) 
 
 ![i2](https://user-images.githubusercontent.com/50455870/132319104-2129bc13-0c98-4c77-bc42-1c89e3c9a32f.JPG)
