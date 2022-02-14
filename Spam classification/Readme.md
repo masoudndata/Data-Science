@@ -12,9 +12,9 @@ Keras is a deep learning API written in Python, running on top of the machine le
 
 Keras is:
 
-Simple -- but not simplistic. Keras reduces developer cognitive load to free you to focus on the parts of the problem that really matter.
-Flexible -- Keras adopts the principle of progressive disclosure of complexity: simple workflows should be quick and easy, while arbitrarily advanced workflows should be possible via a clear path that builds upon what you've already learned.
-Powerful -- Keras provides industry-strength performance and scalability: it is used by organizations and companies including NASA, YouTube, or Waymo.
+* Simple : but not simplistic. Keras reduces developer cognitive load to free you to focus on the parts of the problem that really matter.
+* Flexible : Keras adopts the principle of progressive disclosure of complexity: simple workflows should be quick and easy, while arbitrarily advanced workflows should be possible via a clear path that builds upon what you've already learned.
+* Powerful : Keras provides industry-strength performance and scalability: it is used by organizations and companies including NASA, YouTube, or Waymo.
 # Keras & TensorFlow 2
 TensorFlow 2 is an end-to-end, open-source machine learning platform. You can think of it as an infrastructure layer for differentiable programming. It combines four key abilities:
 
