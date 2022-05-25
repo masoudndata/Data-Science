@@ -30,7 +30,7 @@ Gradient descent:<br/>
 
 ![1222](https://user-images.githubusercontent.com/50455870/132581707-9e3d7149-7ca0-45ac-8576-9032a2a82d98.JPG)
 
-Where  X  is the feature matrix containing  m  examples,  θ  is a column vector of model parameters,  y⃗   is the column vector of outputs, and  α  is the learning rate.
+Where  X  is the feature matrix containing  m  examples,  θ  is a column vector of model parameters,  y⃗   is the column vector of outputs, and  α  is the learning rate
 
 #### Precedure:
 * Dataset Visualization<br/>
